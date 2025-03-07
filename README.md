@@ -15,8 +15,8 @@
 </ul>
 
 <h3>Experiencia al desarrollar el proyecto</h3>
-<p>Considero como enriquecedora esta experiencia al ser una introducción al desarrollo en Android y Kotlin.</p>
-<p>Brindandome herramientas para desarrollar a futuro diversos proyectos poniendo en práctica el aprendizaje adquirido.</p>
+<p>Considero como enriquecedora esta experiencia al ser una introducción al desarrollo en Android y Kotlin,</p>
+<p>brindandome herramientas para desarrollar a futuro diversos proyectos poniendo en práctica el aprendizaje adquirido.</p>
 
 
 <h3>Capturas de pantalla de la aplicación</h3>
