@@ -3,6 +3,7 @@ package com.example.recetas.views
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -41,33 +42,40 @@ fun Receta3(navController: NavController){
 
 @Composable
 private fun ContentView(navController: NavController) {
-    Column {
-        Spacers(50.dp)
-        ImagenRecetas("Hot Cakes Clásicos", R.drawable.receta3, Color(255, 102, 153))
-        TextRecipe(
-            "     Ingredientes\n" +
-                    "    3/4 Taza leche evaporada\n" +
-                    "    1 Huevo\n" +
-                    "    2 Cucharadas de mantequilla\n" +
-                    "    1 Cucharada de vainilla\n" +
-                    "    1 Taza de harina hot cakes\n"+
-                    "    2 De mantequilla\n" +
-                    "    1/2 Taza de moras azules\n" +
-                    "    1/2 Taza de fresas\n" +
-                    "    1 Envase de leche condensada\n" +
-                    "   Elaboración paso a paso\n" +
-                    "    Mezcla la leche evaporada\n"+
-                    "    con el huevo, mantequilla\n" +
-                    "    y harina para hot cakes\n" +
-                    "    cocina por ambos lados \n"+
-                    "    y repite el procedimiento\n"+
-                    "    con el resto\n" +
-                    "    de la preapración.\n",Color.LightGray,87.dp,10.dp
-        )
-        Row {
-            SpacerRow()
-            MainButtonRecetas("Regresar", Color(255, 102, 153), Color.White) {
-                navController.popBackStack()
+    LazyColumn {
+        item {
+            Spacers(50.dp)
+            ImagenRecetas("Hot Cakes Clásicos", R.drawable.receta3, Color(255, 102, 153))
+        }
+
+        item {
+            TextRecipe(
+                "     Ingredientes\n" +
+                        "    3/4 Taza leche evaporada\n" +
+                        "    1 Huevo\n" +
+                        "    2 Cucharadas de mantequilla\n" +
+                        "    1 Cucharada de vainilla\n" +
+                        "    1 Taza de harina hot cakes\n" +
+                        "    2 De mantequilla\n" +
+                        "    1/2 Taza de moras azules\n" +
+                        "    1/2 Taza de fresas\n" +
+                        "    1 Envase de leche condensada\n" +
+                        "   Elaboración paso a paso\n" +
+                        "    Mezcla la leche evaporada\n" +
+                        "    con el huevo, mantequilla\n" +
+                        "    y harina para hot cakes\n" +
+                        "    cocina por ambos lados \n" +
+                        "    y repite el procedimiento\n" +
+                        "    con el resto\n" +
+                        "    de la preapración.\n", Color.LightGray, 87.dp, 10.dp
+            )
+        }
+        item {
+            Row {
+                SpacerRow()
+                MainButtonRecetas("Regresar", Color(255, 102, 153), Color.White) {
+                    navController.popBackStack()
+                }
             }
         }
     }

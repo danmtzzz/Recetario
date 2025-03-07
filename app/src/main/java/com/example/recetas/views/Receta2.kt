@@ -3,6 +3,7 @@ package com.example.recetas.views
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -41,38 +42,44 @@ fun Receta2(navController:NavController){
 
 @Composable
 private fun ContentView(navController: NavController) {
-    Column {
-        Spacers(50.dp)
-        ImagenRecetas("Aguachiles", R.drawable.receta2, Color(255,153,51))
-        TextRecipe(
-            "     Ingredientes\n" +
-                    "    2 cucharadas de mantequilla\n" +
-                    "    2 cucharadas de cebolla picada\n" +
-                    "    1/2 pieza de ajo\n" +
-                    "    3 Cucharadas Harina de trigo\n" +
-                    "    2 Tazas Leche Evaporada\n"+
-                    "    CARNATION® CLAVEL®\n" +
-                    "    2 Cucharadas Pimienta blanca\n" +
-                    "    1 1/2 Cucharada Consomé de\n" +
-                    "    pollo en polvo\n" +
-                    "    8 Piezas Filete de res\n" +
-                    "    medallones fritos\n" +
-                    "   Elaboración paso a paso\n" +
-                    "    Calienta la mantequilla y\n"+ "sofríe la\n"+
-                    "    cebolla con el ajo\n" +
-                    "    Licua la leche con\n" +
-                    "    la cebolla frita y pimienta \n"+
-                    "    ccocina de 10 a 15 minutos\n"+
-                    "    retira el fuego y cuela\n" +
-                    "    Sirve los medallones con la\n"+
-                    "    salsa caliente\n" +
-                    "    acompaña con verduras\n",Color.LightGray,87.dp,10.dp
-        )
-        Row {
-            SpacerRow()
-            MainButtonRecetas("Regresar", Color(255,153,51), Color.White) {
+    LazyColumn {
+        item {
+            Spacers(50.dp)
+            ImagenRecetas("Aguachiles", R.drawable.receta2, Color(255, 153, 51))
+        }
+        item {
+            TextRecipe(
+                "     Ingredientes\n" +
+                        "    2 cucharadas de mantequilla\n" +
+                        "    2 cucharadas de cebolla picada\n" +
+                        "    1/2 pieza de ajo\n" +
+                        "    3 Cucharadas Harina de trigo\n" +
+                        "    2 Tazas Leche Evaporada\n" +
+                        "    CARNATION® CLAVEL®\n" +
+                        "    2 Cucharadas Pimienta blanca\n" +
+                        "    1 1/2 Cucharada Consomé de\n" +
+                        "    pollo en polvo\n" +
+                        "    8 Piezas Filete de res\n" +
+                        "    medallones fritos\n" +
+                        "   Elaboración paso a paso\n" +
+                        "    Calienta la mantequilla y\n" + "sofríe la\n" +
+                        "    cebolla con el ajo\n" +
+                        "    Licua la leche con\n" +
+                        "    la cebolla frita y pimienta \n" +
+                        "    ccocina de 10 a 15 minutos\n" +
+                        "    retira el fuego y cuela\n" +
+                        "    Sirve los medallones con la\n" +
+                        "    salsa caliente\n" +
+                        "    acompaña con verduras\n", Color.LightGray, 68.dp, 10.dp
+            )
+        }
+        item {
+            Row {
+                SpacerRow()
+                MainButtonRecetas("Regresar", Color(255, 153, 51), Color.White) {
 
-                navController.popBackStack()
+                    navController.popBackStack()
+                }
             }
         }
     }

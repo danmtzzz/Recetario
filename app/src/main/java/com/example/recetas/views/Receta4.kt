@@ -3,6 +3,7 @@ package com.example.recetas.views
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -41,28 +42,34 @@ fun Receta4(navController: NavController){
 
 @Composable
 private fun ContentView(navController: NavController) {
-    Column {
-        Spacers(50.dp)
-        ImagenRecetas("Hot Cakes Clásicos", R.drawable.receta4, Color(204, 255, 51))
-        TextRecipe(
-            "     Ingredientes\n" +
-                    "    6 Papas peladas y cocidas\n" +
-                    "    1 Envase de Leche Evaporada\n"+
-                    "    2 Cucharadas de mantequilla\n" +
-                    "    1 Cucharada consomé de pollo\n" +
-                    "    1/2 Cucharada de pimienta negra\n"+
-                    "   Elaboración paso a paso\n" +
-                    "    Machaca las papas\n"+
-                    "    y agrega la leche evaporada\n" +
-                    "    con el consomé y pimienta\n" +
-                    "    cocina por 5 minutos\n"+
-                    "    y sirve como guarnición\n",Color.LightGray,95.dp,10.dp
-        )
-        Row {
-            SpacerRow()
-            MainButtonRecetas("Regresar", Color(204, 255, 51), Color.White) {
+    LazyColumn {
+        item {
+            Spacers(50.dp)
+            ImagenRecetas("Hot Cakes Clásicos", R.drawable.receta4, Color(204, 255, 51))
+        }
+        item {
+            TextRecipe(
+                "     Ingredientes\n" +
+                        "    6 Papas peladas y cocidas\n" +
+                        "    1 Envase de Leche Evaporada\n" +
+                        "    2 Cucharadas de mantequilla\n" +
+                        "    1 Cucharada consomé de pollo\n" +
+                        "    1/2 Cucharada de pimienta negra\n" +
+                        "   Elaboración paso a paso\n" +
+                        "    Machaca las papas\n" +
+                        "    y agrega la leche evaporada\n" +
+                        "    con el consomé y pimienta\n" +
+                        "    cocina por 5 minutos\n" +
+                        "    y sirve como guarnición\n", Color.LightGray, 97.dp, 10.dp
+            )
+        }
+        item {
+            Row {
+                SpacerRow()
+                MainButtonRecetas("Regresar", Color(204, 255, 51), Color.White) {
 
-                navController.popBackStack()
+                    navController.popBackStack()
+                }
             }
         }
     }

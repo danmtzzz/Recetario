@@ -3,6 +3,8 @@ package com.example.recetas.views
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -19,6 +21,7 @@ import com.example.recetas.components.RecipeDescription
 import com.example.recetas.components.RecipeName
 import com.example.recetas.components.Spacers
 import com.example.recetas.components.TitleRecipe
+import java.lang.reflect.Modifier
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -40,7 +43,7 @@ fun HomeView(navController: NavController){
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun ContentView(navController: NavController){
-Column  {
+Column  (modifier = androidx.compose.ui.Modifier.verticalScroll(rememberScrollState())){
     Spacers(120.dp)
     Row{
         BodyImage("Aguachiles", R.drawable.receta1)
