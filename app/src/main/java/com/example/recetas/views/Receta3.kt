@@ -53,13 +53,13 @@ private fun ContentView(navController: NavController) {
                 "     Ingredientes\n" +
                         "    3/4 Taza leche evaporada\n" +
                         "    1 Huevo\n" +
-                        "    2 Cucharadas de mantequilla\n" +
+                        "    2 Cucharadas de\n"+ "     mantequilla\n" +
                         "    1 Cucharada de vainilla\n" +
                         "    1 Taza de harina hot cakes\n" +
                         "    2 De mantequilla\n" +
                         "    1/2 Taza de moras azules\n" +
                         "    1/2 Taza de fresas\n" +
-                        "    1 Envase de leche condensada\n" +
+                        "    1 Envase de leche\n"+ "     condensada\n" +
                         "   Elaboración paso a paso\n" +
                         "    Mezcla la leche evaporada\n" +
                         "    con el huevo, mantequilla\n" +

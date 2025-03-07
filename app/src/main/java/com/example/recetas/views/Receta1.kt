@@ -65,7 +65,8 @@ item {
                         "    delgaditas y mézclalo \n" +
                         "    con el preparado de tu licuadora\n" +
                         "    y el pepino en cubitos\n" +
-                        "    Agrega los camarones\n" + "y la otra mitad\n" +
+                        "    Agrega los camarones\n" +
+                        "      y la otra mitad\n" +
                         "    de chiles picados\n" +
                         "    Deja marinar por una hora\n" +
                         "    Decora con el aguacate\n", Color.LightGray, 60.dp, 25.dp

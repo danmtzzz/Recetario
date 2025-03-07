@@ -62,7 +62,8 @@ private fun ContentView(navController: NavController) {
                         "    8 Piezas Filete de res\n" +
                         "    medallones fritos\n" +
                         "   Elaboración paso a paso\n" +
-                        "    Calienta la mantequilla y\n" + "sofríe la\n" +
+                        "    Calienta la mantequilla y\n" +
+                        "    sofríe la\n" +
                         "    cebolla con el ajo\n" +
                         "    Licua la leche con\n" +
                         "    la cebolla frita y pimienta \n" +

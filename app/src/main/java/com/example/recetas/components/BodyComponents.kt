@@ -48,7 +48,7 @@ Button(onClick=onClick, colors=ButtonDefaults.buttonColors(
 
 @Composable
 fun SpacerRow(){
-    Spacer(modifier = Modifier.width(115.dp))
+    Spacer(modifier = Modifier.width(113.dp))
 }
 @Composable
 fun MainButtonRecetas(name:String, backColor:Color,color:Color,onClick:()->Unit){

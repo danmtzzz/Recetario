@@ -50,15 +50,15 @@ private fun ContentView(navController: NavController) {
         item {
             TextRecipe(
                 "     Ingredientes\n" +
-                        "    6 Papas peladas y cocidas\n" +
-                        "    1 Envase de Leche Evaporada\n" +
-                        "    2 Cucharadas de mantequilla\n" +
-                        "    1 Cucharada consomé de pollo\n" +
-                        "    1/2 Cucharada de pimienta negra\n" +
+                        "    6 Papas peladas\n"+ "     y cocidas\n" +
+                        "    1 Envase de Leche\n"+ "     Evaporada\n" +
+                        "    2 Cucharadas de\n" +"     mantequilla\n" +
+                        "    1 Cucharada consomé\n"+ "      de pollo\n" +
+                        "    1/2 Cucharada de\n" +"     pimienta negra\n" +
                         "   Elaboración paso a paso\n" +
                         "    Machaca las papas\n" +
-                        "    y agrega la leche evaporada\n" +
-                        "    con el consomé y pimienta\n" +
+                        "    y agrega la\n"+ "     leche evaporada\n" +
+                        "    con el consomé y\n"+ "     pimienta\n" +
                         "    cocina por 5 minutos\n" +
                         "    y sirve como guarnición\n", Color.LightGray, 97.dp, 10.dp
             )
