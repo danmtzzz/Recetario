@@ -18,10 +18,10 @@
 <p>Considero como enriquecedora esta experiencia al ser una introducción al desarrollo en Android y Kotlin.</p>
 <p>Brindandome herramientas para desarrollar a futuro diversos proyectos poniendo en práctica el aprendizaje adquirido.</p>
 
-<div>
-  <img src="![image](https://github.com/user-attachments/assets/b5833d2e-d8c9-4c30-93ca-e612bfdd551c)
-">
-</div>
+
+<h3>Capturas de pantalla de la aplicación</h3>
+
+![interfaz](Imagen5.png)
 
 
 
