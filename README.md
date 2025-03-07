@@ -16,12 +16,11 @@
 
 <h3>Experiencia al desarrollar el proyecto</h3>
 <p>Considero como enriquecedora esta experiencia al ser una introducción al desarrollo en Android y Kotlin.</p>
-<p>Brindandome herramientas para desarrollar a futuro diversos proyectos poniendo en práctica el aprendizaje adquirido</p>
+<p>Brindandome herramientas para desarrollar a futuro diversos proyectos poniendo en práctica el aprendizaje adquirido.</p>
 
-  <div>
-  <img src="https://github.com/user-attachments/assets/a4545ca6-63d4-43aa-bda6-52f361df7502">
-  <img src="https://github.com/user-attachments/assets/25cbf3f5-8726-4cd1-a584-ade28f1cd845">
-  <img src="https://github.com/user-attachments/assets/0da01bd2-dc64-43d0-bd2c-33f88b158674">
+<div>
+  <img src="![image](https://github.com/user-attachments/assets/b5833d2e-d8c9-4c30-93ca-e612bfdd551c)
+">
 </div>
 
 
