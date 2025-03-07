@@ -1,12 +1,10 @@
 package com.example.recetas.components
 
-import android.graphics.drawable.Drawable
-import androidx.annotation.DrawableRes
+
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.absolutePadding
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -20,10 +18,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.recetas.R
+
 
 @Composable
 fun TitleBody(name:String){
@@ -66,5 +67,35 @@ fun BodyImage(description:String,receta:Int){
                             .size(130.dp)
                             .clip(RoundedCornerShape(10))
                             .border(5.dp,Color(0,153,51), RoundedCornerShape(10))
+    )
+}
+
+@Composable
+fun TextRecipe(text: String, backColor: Color, width:Dp, height:Dp){
+    Text(text,
+    modifier = Modifier.padding(width, height).background(backColor,
+        RoundedCornerShape(10)),
+        fontSize = 17.sp)
+}
+
+@Composable
+fun RecipeName(text:String, paddingStart:Dp, paddingTop:Dp){
+    Text(text, fontFamily = FontFamily.SansSerif,
+        textAlign = TextAlign.Center,
+        fontSize = 20.sp,
+        fontWeight = FontWeight.Bold,
+        modifier = Modifier.padding(paddingStart, paddingTop)
+    )
+}
+
+@Composable
+fun RecipeDescription(description: String, paddingVertical:Dp, backgroundColor:Color){
+    Text(
+        description,
+        modifier = Modifier.padding(paddingVertical).background(
+            backgroundColor,
+            RoundedCornerShape(10)
+        ),
+        fontSize = 15.sp
     )
 }

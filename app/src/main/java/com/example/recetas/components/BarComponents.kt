@@ -29,8 +29,8 @@ fun ImagenRecetas(descripcion:String, recetas:Int, border:Color){
     Image(
         painter = painterResource(recetas),
         contentDescription = descripcion,
-        modifier = Modifier.padding(100.dp,70.dp)
-                            ./*size(200.dp)*/fillMaxWidth()
+        modifier = Modifier.padding(start = 120.dp,top = 70.dp)
+                            .size(200.dp)
                             .clip(RoundedCornerShape(10))
                             .border(5.dp,border, RoundedCornerShape(10))
 
